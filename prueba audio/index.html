@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Audio</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+      <h1>Aqui va el audio</h1>
+      <audio id="a1" autoplay>
+        <source src="audios/a1.mp3" type="audio/mpeg">
+      </audio>
+      <div>
+        <button class="playbtn" onclick="playPause()"><img src="audios/btnplay.png" alt="x" width="100" /></button>
+      </div>
+      <script> <!-- Idea de codigo extraido de "https://www.youtube.com/watch?v=GSIkghMhFF4" -->
+        var miAudio = document.getElementById("a1")
+        function playPause(){
+          if (miAudio.paused)
+                miAudio.play();
+          else
+              miAudio.pause();
+        }
+
+        var audio = document.getElementById("a1");
+          audio.volume = 0.1;
+        var botonsonido = $(".playbtn")
+        botonsonido.mouseenter(function(){
+          $(".playbtn").css("transform", "scale(1.1, 1.1)");
+        });
+        botonsonido.mouseleave(function(){
+          $(".playbtn").css("transform", "scale(0.9, 0.9)");
+        });
+      </script>
+
+    </body>
+</html>

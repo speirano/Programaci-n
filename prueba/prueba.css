@@ -1,0 +1,35 @@
+#fondo{
+  background-color: #94E0C7;
+}
+#titulo{
+  font-size: 50px;
+  color: black;
+  font-family: Raleway;
+  background-color: #573EEC;
+  border-radius:100px;
+  color:#E07708 ;
+  border:1px black solid;
+  text-align: center;
+}
+#ctitulo{
+  
+}
+.img{
+  text-align: center;
+  border-radius: 100px;
+  position: relative;
+  bottom:-50px;
+}
+.info{
+  float: left;
+  border:1px #E07708 solid;
+  position: relative;
+  top: -160px;
+  width:200px;
+  border-radius: 20px
+}
+.texto{
+  font-family: Raleway;
+  position: relative;
+  right:-5px;
+}
